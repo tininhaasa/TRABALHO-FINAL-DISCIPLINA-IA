@@ -66,8 +66,9 @@ def verify_images(directory):
                 print(f"Imagem inválida removida: {img_path}")
                 os.remove(img_path)
 
-# Exemplo de uso
-
+# CASO PRECISE BAIXAR AS IMAGENS NOVAMENTE, DESCOMENTE AS LINHAS ABAIXO
+# download_and_organize_images('wikiart.csv', 'output_directory')
+# verify_images('output_directory')
 
 # Verifique se o diretório contém imagens
 for root, dirs, files in os.walk('output_directory'):
